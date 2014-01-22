@@ -1,0 +1,38 @@
+
+div#controls #prevBtn a:hover,div.sliderWrap2 #prevBtn2 a:hover,div.sliderWrap9 #prevBtn a:hover,div.sliderWrap10 #prevBtn10 a:hover,div.sliderWrap11 #prevBtn11 a:hover,div.sliderWrap8 #prevBtn8 a:hover, div.sliderWrap7 #prevBtn7 a:hover,div.sliderWrap6 #prevBtn6 a:hover,div.sliderWrap3 #prevBtn3 a:hover,div.sliderWrap4 #prevBtn4 a:hover, div.sliderWrap5 #prevBtn5 a:hover{  
+
+
+background:url(../slider/img/btn-prev2.png) no-repeat 0 0;
+outline:none;
+	
+}
+
+div#controls #nextBtn a:hover,div.sliderWrap9 #nextBtn9 a:hover,div.sliderWrap10 #nextBtn10 a:hover,div.sliderWrap2 #nextBtn2 a:hover,div.sliderWrap11 #nextBtn11 a:hover,div.sliderWrap7 #nextBtn7 a:hover, div.sliderWrap8 #nextBtn8 a:hover, div.sliderWrap6 #nextBtn6 a:hover, div.sliderWrap3 #nextBtn3 a:hover, div.sliderWrap4 #nextBtn4 a:hover, div.sliderWrap5 #nextBtn5 a:hover{ 
+
+
+background:url(../slider/img/btn-next2.png) no-repeat 0 0;
+outline:none;
+	
+}
+
+.listDocor li {
+	
+	margin-left:27px;
+	}
+	
+	
+#center p.specialCase{
+	padding-right:22px;
+}
+
+
+#verlist a{
+	padding-right:20px;
+	width:125px;
+	position:relative;
+	left:-22px;
+	}
+
+#nextBtn a:hover{
+	
+}

@@ -1,0 +1,88 @@
+<?php header('Content-Type:text/html; charset=UTF-8');?>
+<?php echo $this->doctype('XHTML1_STRICT');?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="lv">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<?php echo $this->headTitle('Viesunams Sidrabi - interneta mājas lapa');?>
+<style type="text/css">
+img, div, a, input, spam { behavior: url(/media/css/fixPng/iepngfix.htc) }
+</style> 
+<script type="text/javascript" src="/media/css/fixPng/iepngfix_tilebg.js"></script>
+<script type="text/javascript" src="/media/js/jquery.js"></script>
+<script type="text/javascript" src="/media/js/easySlider1.5.js"></script>
+<script type="text/javascript" src="/media/js/<?php echo $this->jsPage ?>.js"></script>
+<link href="/media/css/main/<?php echo $this->cssPage?>.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/media/css/slider/<?php echo $this->cssSliderPage?>.css" media="screen" rel="stylesheet" type="text/css" />
+
+<!--[if IE]>
+<link href="/media/css/ie/ie.css" media="screen" rel="stylesheet" type="text/css" />
+<![EndIf]-->
+
+</head>
+
+<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+
+<div id="bodyBackBottom">
+<div id="wrap">
+<div id="wrap-top">
+</div><!-- End of wrap-top -->
+<div id="wrap-mid">
+<div id="topMenu">
+<?php echo $this->render('includes/topHorMenu.phtml'); ?>
+<img src="<?php echo $this->baseUrl()?>/media/img/birchFlower4.png" alt="berzu ziendds" id="birchFlower" />
+</div><!--End of topMenu-->
+<div id="contentBack">
+<div id="header">
+<?php echo $this->render('includes/header.phtml'); ?>
+</div><!--End of Header-->
+<div id="content">
+<div id="sub-content">
+<div id="leftSidebar">
+<img src="<?php echo $this->baseUrl()?>/media/img/Flower6.png" alt="margrietes puķe" id="flowerContent"/>
+<!-- <img src="<?php echo $this->baseUrl()?>/media/img/FlowerSmall.png" alt="margrietas puķe ēnā" align="left"/>-->
+</div><!-- end of LeftSidebar -->
+<div id="center">
+
+<?php 
+$path = 'includes/content/'.$this->content.'.phtml';
+echo $this->render($path); 
+?>
+
+</div><!-- End center -->
+</div><!-- End sub-content -->
+<div id="rightSidebar">
+<?php if($this->content == 'ParSidrabiem'){?>
+<img id="ogasArMargrietam" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemOgas.png" alt="skaistā daba" />
+<img id="vista" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemVista2.png" alt="dabas skats" />
+<img id="bezruBirzs" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemBerzi1.png" alt="dabas skats" />
+<img id="starki" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemStarki2.png" alt="stārķu dabā" />
+<img id="terase" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemTerase2.png" alt="terase laukā" />
+<img id="bernuLaukums" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemBernuLaukums3.png" alt="bernu laukums" />
+<img id="pikniks" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemPickniks3.png" alt="pikniks bērzs birzs" />
+
+
+<img id="kamins" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemKamins.png" alt="kamīns" />
+<img id="trepes" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemTrepes2.png" alt="trepes lielā istaba" />
+<img id="gulamistaba" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemGulamistaba.png" alt="guļamistaba" />
+
+<img id="uzkodes" src="<?php echo $this->baseUrl()?>/media/img/ParSidrabiemEdiensPirmais.png" alt="sķivis ar uzkodēm" />
+<img id="uzkodes2" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemUzkodes1.png" alt="sķivis ar uzkodēm" />
+<img id="galds" src="<?php echo $this->baseUrl()?>/media/img/parSidrabiemUzklatsGalds.png" alt="galds ar ēdamo" />
+
+<?php }?>
+
+</div><!-- End of rightSidebar -->
+<div class="clearTag"></div>
+</div><!--End of content-->
+</div><!-- End of contentBack -->
+
+
+</div><!-- End of Wrap-mid -->
+<div id="wrap-bottom">
+</div>
+</div><!--End of Wrap-->
+<div id="footer">Kopijtiesības © 2010, Viesunams "Sidrabi" visas tiesības rezervētas</div>
+</div><!-- end of bodyBackBottom -->
+</body>
+</html>
